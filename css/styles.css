@@ -247,7 +247,7 @@ div.menu-transition a:hover::after {
 
 .profile {
   max-width: var(--profile-max-width);
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
 }
 
 .profile_portrait {
@@ -372,7 +372,7 @@ svg .cloud-front {
 .mainheader {
   display: var(--diplay-option-flex-);
   padding-bottom: var(--padding-bottom-10px);
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
   flex-direction: column;
   justify-content: var(--justify-content-center);
 }
@@ -380,7 +380,7 @@ svg .cloud-front {
 .content-contact-heading {
   display: var(--diplay-option-flex-);
   padding-bottom: 50px;
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
   justify-content: var(--justify-content-center);
 }
 
@@ -393,20 +393,20 @@ svg .cloud-front {
 .heading-about {
   display: var(--diplay-option-flex-);
   padding-bottom: var(--padding-bottom-25px);
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
   justify-content: var(--justify-content-center);
 }
 
 .content-main-about {
   display: var(--diplay-option-flex-);
   padding-bottom: 20px;
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
   justify-content: var(--justify-content-center);
 }
 
 .table-about {
   display: var(--diplay-option-flex-);
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
   justify-content: var(--justify-content-center);
 }
 
@@ -460,7 +460,7 @@ td {
 .mainheader-contact{
   display: var(--diplay-option-flex-);
   padding-bottom: var(--padding-bottom-25px);
-  margin: var(---margin-option-value-0-auto);
+  margin: var(--margin-option-value-0-auto);
   justify-content: var(--justify-content-center);
 }
 

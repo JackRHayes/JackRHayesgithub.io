@@ -53,7 +53,7 @@
   --width-150px: 150px;
   --flex-direction-row: row;
   --clear-both: both;
-  --padding-auto: auto;
+  --format-auto: auto;
   --padding-bottom-25px: 25px;
 }
 
@@ -385,9 +385,8 @@ svg .cloud-front {
 }
 
 .content-link {
-  display: var(--diplay-option-flex-);
-  padding: var(--padding-auto);
-  margin-right: 100%;
+  width: 50%;
+  margin: auto;
 }
 
 .heading-about {
@@ -431,8 +430,6 @@ th {
 
 th,
 td {
-  display: flexbox;
-  padding: var(--padding-auto);
   width: var(--width-150px);
   text-align: var(--text-align-center);
   border: var(--button-border-bottom-1-and-2) var(--border-color);

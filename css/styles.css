@@ -251,7 +251,6 @@ div.menu-transition a:hover::after {
   width: var(--width-100-percent);
   height: 150px;
   background-color: var(--primary-color);
-  overflow: hidden;
 }
 
 .profile_portrait {

@@ -263,15 +263,12 @@ div.menu-transition a:hover::after {
 }
 
 .page-footer {
-  clear: var(--clear-both);
   display: var(--diplay-option-flex-);
-  flex-direction: column;
-  position: var(--position-relative);
-  bottom: var(--bottom-zero-value);
+  justify-content: var(--justify-content-center);
+  flex-direction: var(--flex-direction-row);
+  clear: var(--clear-both);
   text-align: var(--text-align-center);
-  width: var(--width-100-percent);
-  padding: var(--padding-20px);
-  color: var(--background-color);
+  padding: var(--padding-100px);
 }
 
 .grid_item {
@@ -404,15 +401,6 @@ svg .cloud-front {
   justify-content: var(--justify-content-center);
 }
 
-.about-footer-content {
-  display: var(--diplay-option-flex-);
-  justify-content: var(--justify-content-center);
-  flex-direction: var(--flex-direction-row);
-  clear: var(--clear-both);
-  text-align: var(--text-align-center);
-  padding: var(--padding-100px);
-}
-
 table {
   border-collapse: separate;
   border-spacing: 0 15px;
@@ -431,17 +419,9 @@ td {
   border-radius: var(--border-radius-10-percent);
 }
 
-.contact-footer {
-  display: var(--diplay-option-flex-);
-  justify-content: var(--justify-content-center);
-  flex-direction: var(--flex-direction-row);
-  clear: var(--clear-both);
-  text-align: var(--text-align-center);
-  padding: var(--padding-100px);
-}
-
 .berlin-illustration {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 50%;

@@ -270,7 +270,7 @@ div.menu-transition a:hover::after {
   bottom: var(--bottom-zero-value);
   text-align: var(--text-align-center);
   width: var(--width-100-percent);
-  padding: var(--padding-20px);
+  padding-top: 100px;
   color: var(--background-color);
 }
 

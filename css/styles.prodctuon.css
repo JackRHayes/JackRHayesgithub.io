@@ -1,7 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /****** body start ******/
@@ -14,8 +14,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /***** body end ****/
@@ -42,6 +42,7 @@ h2 {
 
 a {
   color: rgba(9, 138, 150);
+  text-decoration: none;
 }
 
 a:hover { /* no underline when hovering */
@@ -140,47 +141,56 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(9, 138, 150);
-  padding-bottom: 10px;
+  padding-bottom: 165px;
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-bottom: 6px solid rgba(9, 138, 150);
+
 }
 
 .page-header li {
   position: relative;
   list-style: none;
-}
+} 
+
+/**controls the animation on menue bar ^^^ **/
 
 .navigation-list-item {
   margin-right: 10px;
   text-decoration: none;
-  padding-bottom: 50%;
 }
 
 div.menu-transition a::before {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
   left: 0;
   width: 89%;
   height: 2px;
-  background: rgba(255, 255, 255);
+  background: rgba(9, 138, 150);
   content: "";
   opacity: 0;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  -moz-transition: all 0.3;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 div.menu-transition a::after {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
   left: 0;
   width: 89%;
   height: 2px;
-  background: rgba(255, 255, 255);
+  background: rgba(9, 138, 150);
   content: "";
   opacity: 0;
   -webkit-transition: all 0.3s;
@@ -192,18 +202,18 @@ div.menu-transition a::after {
 div.menu-transition a::before {
   top: 0;
   -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -o-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
 div.menu-transition a::after {
   bottom: 0;
   -webkit-transform: translateY(10px);
-  -ms-transform: translateY(10px);
   -moz-transform: translateY(10px);
   -o-transform: translateY(10px);
+  -ms-transform: translateY(10px);
   transform: translateY(10px);
 }
 
@@ -211,30 +221,35 @@ div.menu-transition a:hover::before,
 div.menu-transition a:hover::after {
   opacity: 1;
   -webkit-transform: translateY(0);
-  -ms-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  -o-transform: translateY(10px);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .page-header__logo {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 100px;
-  flex: 0 1 100px;
-  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 320px;
+  padding-top: 150px;
+  padding-left: 40px;
 }
 
 .navigation-list-item {
-  color: rgba(255, 255, 255);
+  color: rgba(9, 138, 150);
 }
 
 .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  padding-bottom: 1px;
+  padding-top: 150px;
+  -webkit-box-pack:end;
+  -ms-flex-pack:end;
+  justify-content:end;
 }
 
 .navigation-list li {
@@ -246,6 +261,8 @@ div.menu-transition a:hover::after {
 .navbar {
   width: 100%;
   text-align: right;
+  padding-top: 140px;
+  padding-right: 50px;
 }
 
 /**** end header ****/
@@ -265,19 +282,8 @@ div.menu-transition a:hover::after {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 120px;
-}
-
-.profile_portrait {
-  float: left;
-  width: 25px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
+  height: 150px;
+  background-color: rgba(9, 138, 150);
 }
 
 .profile_portrait {
@@ -285,11 +291,8 @@ div.menu-transition a:hover::after {
   width: 250px;
   margin-right: 40px;
   float: left;
-  border-radius: 50%;
-}
-
-footer {
-  margin-top: auto;
+  border-radius: 25%;
+  padding-bottom: 20px;
 }
 
 .page-footer {
@@ -306,13 +309,8 @@ footer {
   text-align: center;
   width: 100%;
   padding: 20px;
+  color: rgba(255, 255, 255);
 }
-
-.footer-image-link {
-  text-decoration: none;
-  border: none;
-}
-
 .grid_item {
   display: inline-block;
   width: 33%;
@@ -367,18 +365,12 @@ footer {
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(50px, 50px);
-    -ms-transform: translate(50px, 50px);
-    -moz-transform: translate(50px, 50px);
-    -o-transform: translate(50px, 50px);
-    transform: translate(50px, 50px);
+            transform: translate(50px, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-    -ms-transform: translate(200px, 50px);
-    -moz-transform: translate(200px, 50px);
-    -o-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
@@ -390,22 +382,19 @@ footer {
 
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(550px, 48px);
-    -ms-transform: translate(550px, 48px);
-    -moz-transform: translate(550px, 48px);
-    -o-transform: translate(550px, 48px);
-    transform: translate(550px, 48px);
+            transform: translate(550px, 48px);
   }
 
   to {
     -webkit-transform: translate(6px, 48px);
-    transform: translate(6px, 48px);
+            transform: translate(6px, 48px);
   }
 }
 
@@ -486,19 +475,15 @@ svg .cloud-front {
           justify-content: center;
 }
 
-.mainheader {
+.mainheader-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   margin: 0 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content-contact-heading {
@@ -508,8 +493,8 @@ svg .cloud-front {
   padding-bottom: 50px;
   margin: 0 auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content-link {
@@ -524,8 +509,8 @@ svg .cloud-front {
   padding-bottom: 25px;
   margin: 0 auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content-main-about {
@@ -535,8 +520,8 @@ svg .cloud-front {
   padding-bottom: 20px;
   margin: 0 auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .table-about {
@@ -545,8 +530,8 @@ svg .cloud-front {
   display: flex;
   margin: 0 auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about-footer-content {
@@ -554,12 +539,12 @@ svg .cloud-front {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   clear: both;
   text-align: center;
   padding: 100px;
@@ -594,12 +579,12 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   clear: both;
   text-align: center;
   padding: 100px;
@@ -621,8 +606,8 @@ td {
   padding-bottom: 25px;
   margin: 0 auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .nyc-picture {
@@ -637,8 +622,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .phonenumber-link {
@@ -646,8 +631,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contact-button-contact-page {
@@ -655,8 +640,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-bottom: 25px;
 }
 
@@ -665,8 +650,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .phone-form {
@@ -674,8 +659,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .message-form {
@@ -683,8 +668,8 @@ td {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /********** media quaries ***********/

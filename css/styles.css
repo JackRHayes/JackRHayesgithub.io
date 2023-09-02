@@ -1,12 +1,11 @@
-/* Reset and common styles */
 * {
   box-sizing: border-box;
 }
 
 /* Global variables */
 :root {
-  --primary-color: rgba(9, 138, 150);
-  --background-color: rgba(255, 255, 255);
+  --primary-color: #00838f;
+  --background-color: #ffffff;
   --grid-background-color: rgba(211, 211, 211);
   --border-color: rgba(0, 0, 0);
   --font-style: 'Poppins';

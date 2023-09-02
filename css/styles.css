@@ -10,6 +10,8 @@
   --border-color: rgba(0, 0, 0);
   --font-style: 'Poppins';
   --button-transition: opacity 0.9s;
+  --font-size-h1: 36px;
+  --font-size-h2: 28px;
 }
 
 /* Body styles */
@@ -19,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: 16px; /* Reset font size for body content */
 }
 
 main {
@@ -31,15 +34,15 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: var(--font-size-h1); /* Increase font size */
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.5; /* Adjust line height */
 }
 
 h2 {
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 1.75;
+  font-weight: 400; /* Adjust font weight */
+  font-size: var(--font-size-h2); /* Increase font size */
+  line-height: 1.5; /* Adjust line height */
 }
 
 /* Anchor styles */
